@@ -23,7 +23,16 @@ var q3 = {
 	possibleAnswer3: "Danny Thomas",
 	correctAnswer: "Danny Thomas"
 }
-var theQuestions = [q1,q2,q3];
+var q4 = {
+	  question: "Who palyed the beaver in Leave it to Beaver",
+	  possibleAnswer1: "Jerry Mathers",
+	  possibleAnswer2: "Tommy Kirk",
+	  possibleAnswer3: "Bobby Driscoll",
+	  correctAnswer:   "Jerry Mathers"
+}	  
+
+
+theQuestions = [q1,q2,q3,q4];
 function initialize() {
 	console.log("initialize");
 	createQuestions();
@@ -44,10 +53,10 @@ function createQuestions() {
    var questionText = "";
    var w;
    var nameOfRadio = "radio";
-   for (j=0;j<3;j++) {
+   for (j=0;j<4;j++) {
    	 w = theQuestions[j];
    $("#questions").append("<section>" + w.question);
-      for (i=0;i<3;i++){
+      for (i=0;i<4;i++){
       	nameOfRadio = "radio" +j;
       if (i==0){
    	    questionText = w.possibleAnswer1;
