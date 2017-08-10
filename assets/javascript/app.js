@@ -1,7 +1,5 @@
 var numberCorrect = 0;
 var numberWrong = 0;
-var numbWins = 0;
-var numbLoses = 0;
 var q1 = {
 	question: "Who hosted queen for a day?",
 	possibleAnswer1: "Johnny Carson",
@@ -65,7 +63,6 @@ function createQuestions() {
       }
       if (i==1){
    	    questionText = w.possibleAnswer2;
-   	    console.log(questionText + " i = " +i);
       }
       if (i==2){
    	    questionText = w.possibleAnswer3;
@@ -75,7 +72,6 @@ function createQuestions() {
       var radioYes = document.createElement("input");
       radioYes.setAttribute("type","radio");
       radioYes.setAttribute("id","radio"+i);
-      console.log("nameOfRadio " + nameOfRadio);
       radioYes.setAttribute("name",nameOfRadio);
       $("#questions").append(radioYes);
    }
@@ -86,5 +82,5 @@ function createQuestions() {
 
 }
 function assesTheGame() {
-	
+
 }
