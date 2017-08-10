@@ -56,7 +56,7 @@ function createQuestions() {
    for (j=0;j<4;j++) {
    	 w = theQuestions[j];
    $("#questions").append("<section>" + w.question);
-      for (i=0;i<4;i++){
+      for (i=0;i<3;i++){
       	nameOfRadio = "radio" +j;
       if (i==0){
    	    questionText = w.possibleAnswer1;
