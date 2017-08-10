@@ -13,7 +13,7 @@ var q2 = {
 	question: "Who was the first host of the tonight show?",
 	possibleAnswer1: "Johnny Carson",
 	possibleAnswer2: "Joey Bishop",
-	possibeAnswer3: "Jack Paar",
+	possibleAnswer3: "Jack Paar",
 	correctAnswer: "Jack Paar"
 }
 var q3 = {
