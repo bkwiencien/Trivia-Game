@@ -73,7 +73,6 @@ function createQuestions() {
       }
       if (i==2){
    	    questionText = w.possibleAnswer3;
-   	    console.log(questionText + " i= " +i);
       }
       $("#questions").append(questionText+ " ");
       var radioYes = document.createElement("input");
@@ -81,7 +80,7 @@ function createQuestions() {
       radioYes.setAttribute("id","radio"+i);
       radioYes.setAttribute("name",nameOfRadio);
       $("#questions").append(radioYes);
-      $("#questions").append("<br>")
+      $("#questions").append("<br>");
    }
    $("#questions").append("</section>");  
 }
