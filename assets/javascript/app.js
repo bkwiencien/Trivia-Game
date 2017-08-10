@@ -77,6 +77,7 @@ function createQuestions() {
       var radioYes = document.createElement("input");
       radioYes.setAttribute("type","radio");
       radioYes.setAttribute("id","radio"+i);
+      console.log("id = " + "radio"+i);
       radioYes.setAttribute("name",nameOfRadio);
       $("#questions").append(radioYes);
       $("#questions").append("<br>");
@@ -87,6 +88,10 @@ function createQuestions() {
  //  $("#questions").append(radioYes);
 
 }
-function assesTheGame() {
+$("#radio0").on("click" ,function (){
+	console.log("1 clicked");
+});
 
+function assesTheGame() {
+  console.log("in assess the game");
 }
