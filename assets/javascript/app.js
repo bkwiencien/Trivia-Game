@@ -24,7 +24,7 @@ var q3 = {
 	correctAnswer: "Danny Thomas"
 }
 var q4 = {
-	  question: "Who palyed the beaver in Leave it to Beaver",
+	  question: "Who played the beaver in Leave it to Beaver",
 	  possibleAnswer1: "Jerry Mathers",
 	  possibleAnswer2: "Tommy Kirk",
 	  possibleAnswer3: "Bobby Driscoll",
