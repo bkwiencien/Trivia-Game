@@ -18,16 +18,16 @@ var q2 = {
 }
 var q3 = {
 	question: "Daddy im Kare Room for Daddy was played by?",
-	passibleAnswer1: "Johnny Carson",
+	passibleAnswer1: "Ralph Waldo Emerson",
 	possibleAnswer2: "Frank Sinatra",
 	possibeAnswer3: "Danny Thomas",
 	correctAnswer: "Danny Thomas"
 }
+var theQuestions = [q1,q2,q3];
 function initialize() {
 	console.log("initialize");
 	createQuestions();
 	var timeLeft = 121;
-	console.log("time left = " + timeLeft);
 	var gameTimer = setInterval(function() {
 		timeLeft--;
 		$("#timer").html("<center>Seconds Remaining: " + timeLeft + "</center>")
@@ -39,5 +39,11 @@ function initialize() {
 
 }
 function createQuestions() {
+   console.log("in createQuesstions");
+   var radioYes = document.createElement("input");
+   radioYes.setAttribute("type","radio");
+   radioYes.setAttribute("id","radio1");
+
+   $("#questions").append(radioYes);
 
 }
