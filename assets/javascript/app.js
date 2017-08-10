@@ -41,7 +41,7 @@ theQuestions = [q1,q2,q3,q4,q5];
 function initialize() {
 	console.log("initialize");
 	createQuestions();
-	var timeLeft = 121;
+	var timeLeft = 61;
 	var gameTimer = setInterval(function() {
 		timeLeft--;
 		$("#timer").html("<center>Seconds Remaining: " + timeLeft + "</center>")
