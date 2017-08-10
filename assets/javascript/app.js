@@ -42,6 +42,7 @@ function initialize() {
 		$("#timer").html("<center>Seconds Remaining: " + timeLeft + "</center>")
 		if (timeLeft <= 0){
 			clearInterval(gameTimer);
+			assesTheGame();
 	
 			$("#timer").html("seconds Remaining: 0");
 		}
@@ -83,4 +84,7 @@ function createQuestions() {
 
  //  $("#questions").append(radioYes);
 
+}
+function assesTheGame() {
+	
 }
