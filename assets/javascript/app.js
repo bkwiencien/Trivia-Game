@@ -81,6 +81,7 @@ function createQuestions() {
       radioYes.setAttribute("id","radio"+i);
       radioYes.setAttribute("name",nameOfRadio);
       $("#questions").append(radioYes);
+      $("#questions").append("<br>")
    }
    $("#questions").append("</section>");  
 }
