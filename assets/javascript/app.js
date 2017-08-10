@@ -43,12 +43,14 @@ function createQuestions() {
    var idTemplate = "radio";
    var questionText = "";
    var w;
+   var nameOfRadio = "radio";
    console.log("in createQuesstions");
    console.log(q1.question);
    for (j=0;j<3;j++) {
    	 w = theQuestions[j];
    $("#questions").append(w.question);
       for (i=0;i<3;i++){
+      	nameOfRadio = "radio" +j;
       if (i==0){
    	    questionText = w.possibleAnswer1;
    	    console.log(questionText + " i= " +i);
@@ -65,7 +67,8 @@ function createQuestions() {
       var radioYes = document.createElement("input");
       radioYes.setAttribute("type","radio");
       radioYes.setAttribute("id","radio"+i);
-      radioYes.setAttribute("name","radio");
+      console.log("nameOfRadio " + nameOfRadio);
+      radioYes.setAttribute("name",nameOfRadio);
       $("#questions").append(radioYes);
    }
 }
