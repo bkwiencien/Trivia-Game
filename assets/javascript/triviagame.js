@@ -17,6 +17,19 @@ var q2 = {
 	correctAnswer: "Jack Par"
 }
 function initialize() {
+	console.log("initialize");
+	var timeLeft = 120;
+	console.log("time left = " + timeLeft);
+	var gameTimer = setInterval(function() {
+		timeLeft--;
+		console.log("in the function")
+		$("#timer").html("<center>Seconds Remaining: " + timeLeft + "</center>")
+		if (timeLeft <= 0){
+			clearInterval(gameTimer);
+			$("#timer").html("seconds Remaining: 0");
+		}
+	},1000);
+	console.log("here timeLeft = " + timeLeft);
 
 
 }
