@@ -65,6 +65,7 @@ function createQuestions() {
       var radioYes = document.createElement("input");
       radioYes.setAttribute("type","radio");
       radioYes.setAttribute("id","radio"+i);
+      radioYes.setAttribute("name","radio");
       $("#questions").append(radioYes);
    }
 }
