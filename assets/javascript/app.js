@@ -18,7 +18,7 @@ var q2 = {
 }
 function initialize() {
 	console.log("initialize");
-	var timeLeft = 120;
+	var timeLeft = 121;
 	console.log("time left = " + timeLeft);
 	var gameTimer = setInterval(function() {
 		timeLeft--;
