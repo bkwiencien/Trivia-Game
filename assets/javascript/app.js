@@ -7,7 +7,7 @@ var q1 = {
 	possibleAnswer1: "Johnny Carson",
 	possibleAnswer2: "Jack Bailey",
 	possibleAnswer3: "ED McMahon",
-	correctAnswer: "Jack Klugman"
+	correctAnswer: "Jack Bailey"
 }
 var q2 = {
 	question: "Who was the first host of the tonight show?",
@@ -44,7 +44,7 @@ function createQuestions() {
    console.log("in createQuesstions");
    console.log(q1.question);
    $("#questions").append(q1.question);
-   for (i=0;i<4;i++){
+   for (i=0;i<3;i++){
    if (i==0){
    	 questionText = q1.possibleAnswer1;
    	 console.log(questionText);
