@@ -66,7 +66,6 @@ function createQuestions() {
       	nameOfRadio = "radio" +j;
       if (i==0){
    	    questionText = w.possibleAnswer1;
-   	    console.log(questionText + " i= " +i);
       }
       if (i==1){
    	    questionText = w.possibleAnswer2;
