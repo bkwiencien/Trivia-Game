@@ -22,15 +22,22 @@ var q3 = {
 	correctAnswer: "Danny Thomas"
 }
 var q4 = {
-	  question: "Who played the beaver in Leave it to Beaver",
+	  question: "Who played the beaver in Leave it to Beaver?",
 	  possibleAnswer1: "Jerry Mathers",
 	  possibleAnswer2: "Tommy Kirk",
 	  possibleAnswer3: "Bobby Driscoll",
 	  correctAnswer:   "Jerry Mathers"
-}	  
+}	
+var q5 = {
+	  question: "Who played the Andy's girlfriend on the Andy Grifith Show?",
+	  possibleAnswer1: "Aneta Corsaut",
+	  possibleAnswer2: "Arnold Schwarzenegger",
+	  possibleAnswer3: "Dame Edith Evans",
+	  correctAnswer:   "Aneta Corsaut"
+}	    
 
 
-theQuestions = [q1,q2,q3,q4];
+theQuestions = [q1,q2,q3,q4,q5];
 function initialize() {
 	console.log("initialize");
 	createQuestions();
@@ -52,7 +59,7 @@ function createQuestions() {
    var questionText = "";
    var w;
    var nameOfRadio = "radio";
-   for (j=0;j<4;j++) {
+   for (j=0;j<5;j++) {
    	 w = theQuestions[j];
    $("#questions").append("<section>" + w.question);
       for (i=0;i<3;i++){
