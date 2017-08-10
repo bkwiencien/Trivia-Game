@@ -41,7 +41,7 @@ theQuestions = [q1,q2,q3,q4,q5];
 function initialize() {
 	console.log("initialize");
 	createQuestions();
-	var timeLeft = 61;
+	var timeLeft = 11;
 	var gameTimer = setInterval(function() {
 		timeLeft--;
 		$("#timer").html("<center>Seconds Remaining: " + timeLeft + "</center>")
@@ -77,15 +77,13 @@ function createQuestions() {
       var radioYes = document.createElement("input");
       radioYes.setAttribute("type","radio");
       radioYes.setAttribute("id","radio"+i);
-      console.log("id = " + "radio"+i);
       radioYes.setAttribute("name",nameOfRadio);
+      radioYes.setAttribute("data","radio"+i);
       $("#questions").append(radioYes);
       $("#questions").append("<br>");
    }
    $("#questions").append("</section>");  
 }
-
- //  $("#questions").append(radioYes);
 
 }
 $("#radio0").on("click" ,function (){
@@ -94,4 +92,9 @@ $("#radio0").on("click" ,function (){
 
 function assesTheGame() {
   console.log("in assess the game");
+  xoxo = $(this);
+  console.log(xoxo);
+}
+function xoxo() {
+	console.log("in xoxo");
 }
