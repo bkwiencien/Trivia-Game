@@ -7,7 +7,7 @@ var q1 = {
 	possibleAnswer1: "Johnny Carson",
 	possibleAnswer2: "Jack Bailey",
 	possibleAnswer3: "ED McMahon",
-	correctAnswer: "Jack Bailey"
+	correctAnswer: "Jack Klugman"
 }
 var q2 = {
 	question: "Who was the first host of the tonight show?",
@@ -39,11 +39,31 @@ function initialize() {
 
 }
 function createQuestions() {
+   var idTemplate = "radio";
+   var questionText = "";
    console.log("in createQuesstions");
+   console.log(q1.question);
+   $("#questions").append(q1.question);
+   for (i=0;i<4;i++){
+   if (i==0){
+   	 questionText = q1.possibleAnswer1;
+   	 console.log(questionText);
+   }
+   if (i==1){
+   	 questionText = q1.possibleAnswer2;
+   	 console.log(questionText);
+   }
+   if (i==2){
+   	 questionText = q1.possibleAnswer3;
+   	 console.log(questionText);
+   }
+   $("#questions").append(questionText+ " ");
    var radioYes = document.createElement("input");
    radioYes.setAttribute("type","radio");
-   radioYes.setAttribute("id","radio1");
-
+   radioYes.setAttribute("id","radio"+i);
    $("#questions").append(radioYes);
+}
+
+ //  $("#questions").append(radioYes);
 
 }
