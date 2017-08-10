@@ -44,11 +44,9 @@ function createQuestions() {
    var questionText = "";
    var w;
    var nameOfRadio = "radio";
-   console.log("in createQuesstions");
-   console.log(q1.question);
    for (j=0;j<3;j++) {
    	 w = theQuestions[j];
-   $("#questions").append(w.question);
+   $("#questions").append("<section>" + w.question);
       for (i=0;i<3;i++){
       	nameOfRadio = "radio" +j;
       if (i==0){
@@ -71,6 +69,7 @@ function createQuestions() {
       radioYes.setAttribute("name",nameOfRadio);
       $("#questions").append(radioYes);
    }
+   $("#questions").append("</section>");  
 }
 
  //  $("#questions").append(radioYes);
