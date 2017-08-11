@@ -52,7 +52,7 @@ theRadios =[];
 function initialize() {
 	console.log("initialize");
 	createQuestions();
-	var timeLeft = 31;
+	var timeLeft = 61;
 	var gameTimer = setInterval(function() {
 		timeLeft--;
 		$("#timer").html("<center>Seconds Remaining: " + timeLeft + "</center>")
@@ -94,7 +94,7 @@ function createQuestions() {
       theRadios[len] = nameOfRadio;
       radioYes.setAttribute("data","radio"+i+j);
       radioYes.setAttribute("value","radio"+i+j);
-      radioYes.setAttribute("onclick","xoxo"+i+j+"()");
+     // radioYes.setAttribute("onclick","xoxo()");
       $("#questions").append(radioYes);
       $("#questions").append("<br>");
    }
@@ -109,6 +109,7 @@ $("#radio00").on("click" ,function (){
 function assesTheGame() {
   var whoWasChosen;
   console.log("in assess the game");
+  processTheClicks();
   for (j=0;j<theQuestions.length;j++) {
       var w = theQuestions[j];
       if (w.answeredCorrectly == "Y") {
@@ -120,75 +121,33 @@ function assesTheGame() {
    $("#correct").html("correct " + numberCorrect);
    $("#wrong").html("wrong " + numberWrong);
    $("#questions").remove();
-  //whoWasChosen = document.getElementsByName("radio00");
-  //console.log(whoWasChosen);
-
-  //console.log(whoWasChosen.input.attributes.checked);
 
 }
-function xoxo00() {
-	console.log("in xoxo00");
-	q1.answeredCorrectly = "N";
-	console.log(this);
+function processTheClicks() {
+	console.log("in processTheClicks");
+	if ($("#radio10").is(":checked")) {
+		console.log("radio10 checked");
+		q1.answeredCorrectly="Y";
+	}
+	if ($("#radio21").is(":checked")) {
+		console.log("radio201 checked");
+		q2.answeredCorrectly = "Y";
+	}
+	if ($("#radio22").is(":checked")) {
+		console.log("radio22 checked");
+		q3.answeredCorrectly = "Y";
+	}	
+	if ($("#radio03").is(":checked")) {
+		console.log("radio03 checked");
+		q4.answeredCorrectly = "Y";
+	}	
+	if ($("#radio04").is(":checked")) {
+		console.log("radio04 checked");
+		q5.answeredCorrectly = "Y";
+	}	
 }
-function xoxo10() {
-	console.log("in xoxo10");
-	q1.answeredCorrectly = "Y";
-	console.log(this);
-}
-function xoxo20() {
-	console.log("in xoxo20");
-	q1.answeredCorrectly = "N";
-	console.log(this);
-}
-function xoxo01() {
-	console.log("in xoxo01");
-	console.log(this);
-}
-function xoxo11() {
-	console.log("in xoxo11");
-	console.log(this);
-}
-function xoxo21() {
-	console.log("in xoxo21");
-	q2.answeredCorrectly="Y";
-	console.log(this);
-}
-function xoxo02() {
-	console.log("in xoxo02");
-	console.log(this);
-}
-function xoxo22() {
-	console.log("in xoxo22");
-	q3.answeredCorrectly="Y";
-	console.log(this);
-}
-function xoxo03() {
-	console.log("in xoxo03");
-	q4.answeredCorrectly="Y";
-	console.log(this);
-}
-function xoxo13() {
-	console.log("in xoxo13");
-	console.log(this);
-}
-function xoxo23() {
-	console.log("in xoxo23");
-	console.log(this);
-}
-function xoxo04() {
-	console.log("in xoxo04");
-	q5.answeredCorrectly="Y";
-	console.log(this);
-}
-function xoxo14() {
-	console.log("in xoxo14");
-	console.log(this);
-}
-function xoxo24() {
-	console.log("in xoxo24");
-	console.log(this);
-}
+
+
 
 
 
