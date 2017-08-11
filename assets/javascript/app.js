@@ -119,6 +119,7 @@ function assesTheGame() {
    }
    $("#correct").html("correct " + numberCorrect);
    $("#wrong").html("wrong " + numberWrong);
+   $("#questions").remove();
   //whoWasChosen = document.getElementsByName("radio00");
   //console.log(whoWasChosen);
 
