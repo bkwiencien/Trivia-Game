@@ -86,7 +86,7 @@ function createQuestions() {
       radioYes.setAttribute("name",nameOfRadio);
       radioYes.setAttribute("data","radio"+i+j);
       radioYes.setAttribute("value","radio"+i+j);
-      radioYes.setAttribute("onclick","xoxo()");
+      radioYes.setAttribute("onclick","xoxo"+i+j+"()");
       $("#questions").append(radioYes);
       $("#questions").append("<br>");
    }
@@ -99,11 +99,74 @@ $("#radio00").on("click" ,function (){
 });
 
 function assesTheGame() {
+  var whoWasChosen;
   console.log("in assess the game");
-  xoxo = $(this);
-  console.log(xoxo);
+  //whoWasChosen = $("#radio00");
+  whoWasChosen = document.getElementsByName("radio00");
+  console.log(whoWasChosen);
+  //console.log(whoWasChosen.input.attributes.checked);
+
 }
-function xoxo() {
-	console.log("in xoxo");
+function xoxo00() {
+	console.log("in xoxo00");
 	console.log(this);
 }
+function xoxo10() {
+	console.log("in xoxo10");
+	console.log(this);
+}
+function xoxo20() {
+	console.log("in xoxo20");
+	console.log(this);
+}
+function xoxo01() {
+	console.log("in xoxo01");
+	console.log(this);
+}
+function xoxo11() {
+	console.log("in xoxo11");
+	console.log(this);
+}
+function xoxo21() {
+	console.log("in xoxo21");
+	console.log(this);
+}
+function xoxo02() {
+	console.log("in xoxo02");
+	console.log(this);
+}
+function xoxo22() {
+	console.log("in xoxo22");
+	console.log(this);
+}
+function xoxo03() {
+	console.log("in xoxo03");
+	console.log(this);
+}
+function xoxo13() {
+	console.log("in xoxo13");
+	console.log(this);
+}
+function xoxo23() {
+	console.log("in xoxo23");
+	console.log(this);
+}
+function xoxo04() {
+	console.log("in xoxo04");
+	console.log(this);
+}
+function xoxo14() {
+	console.log("in xoxo14");
+	console.log(this);
+}
+function xoxo24() {
+	console.log("in xoxo24");
+	console.log(this);
+}
+
+
+
+
+
+
+
