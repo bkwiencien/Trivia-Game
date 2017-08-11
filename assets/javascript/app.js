@@ -6,6 +6,7 @@ var q1 = {
 	possibleAnswer2: "Jack Bailey",
 	possibleAnswer3: "ED McMahon",
 	correctAnswer: "Jack Bailey",
+	correctAnswerByID: "radio10",
 	answeredCorrectly: "N"
 }
 var q2 = {
@@ -14,6 +15,7 @@ var q2 = {
 	possibleAnswer2: "Joey Bishop",
 	possibleAnswer3: "Jack Paar",
 	correctAnswer: "Jack Paar",
+	correctAnswerById: "radio21",
 	answeredCorrectly: "N"
 }
 var q3 = {
@@ -22,6 +24,7 @@ var q3 = {
 	possibleAnswer2: "Frank Sinatra",
 	possibleAnswer3: "Danny Thomas",
 	correctAnswer: "Danny Thomas",
+	correctAnswerById: "radio22",
 	answeredCorrectly: "N"
 }
 var q4 = {
@@ -30,6 +33,7 @@ var q4 = {
 	  possibleAnswer2: "Tommy Kirk",
 	  possibleAnswer3: "Bobby Driscoll",
 	  correctAnswer:   "Jerry Mathers",
+	  correctAnswerById: "radio03",
 	  answeredCorrectly: "N"
 }	
 var q5 = {
@@ -38,6 +42,7 @@ var q5 = {
 	  possibleAnswer2: "Arnold Schwarzenegger",
 	  possibleAnswer3: "Dame Edith Evans",
 	  correctAnswer:   "Aneta Corsaut",
+	  correctAnswerById: "radio04",
 	  answeredCorrectly: "N"
 }	    
 
@@ -101,22 +106,35 @@ $("#radio00").on("click" ,function (){
 function assesTheGame() {
   var whoWasChosen;
   console.log("in assess the game");
-  //whoWasChosen = $("#radio00");
-  whoWasChosen = document.getElementsByName("radio00");
-  console.log(whoWasChosen);
+  for (j=0;j<theQuestions.length;j++) {
+      var w = theQuestions[j];
+      if (w.answeredCorrectly == "Y") {
+      	numberCorrect++;
+      } else {
+      	numberWrong++;
+      }
+   }
+   $("#correct").html("correct " + numberCorrect);
+   $("#wrong").html("wrong " + numberWrong);
+  //whoWasChosen = document.getElementsByName("radio00");
+  //console.log(whoWasChosen);
+
   //console.log(whoWasChosen.input.attributes.checked);
 
 }
 function xoxo00() {
 	console.log("in xoxo00");
+	q1.answeredCorrectly = "N";
 	console.log(this);
 }
 function xoxo10() {
 	console.log("in xoxo10");
+	q1.answeredCorrectly = "Y";
 	console.log(this);
 }
 function xoxo20() {
 	console.log("in xoxo20");
+	q1.answeredCorrectly = "N";
 	console.log(this);
 }
 function xoxo01() {
