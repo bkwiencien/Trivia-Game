@@ -48,6 +48,7 @@ var q5 = {
 
 
 theQuestions = [q1,q2,q3,q4,q5];
+theRadios =[];
 function initialize() {
 	console.log("initialize");
 	createQuestions();
@@ -89,6 +90,8 @@ function createQuestions() {
       radioYes.setAttribute("id","radio"+i+j);
       console.log("id = radio" + i + j);
       radioYes.setAttribute("name",nameOfRadio);
+      var len = theRadios.length;
+      theRadios[len] = nameOfRadio;
       radioYes.setAttribute("data","radio"+i+j);
       radioYes.setAttribute("value","radio"+i+j);
       radioYes.setAttribute("onclick","xoxo"+i+j+"()");
@@ -147,6 +150,7 @@ function xoxo11() {
 }
 function xoxo21() {
 	console.log("in xoxo21");
+	q2.answeredCorrectly="Y";
 	console.log(this);
 }
 function xoxo02() {
@@ -155,10 +159,12 @@ function xoxo02() {
 }
 function xoxo22() {
 	console.log("in xoxo22");
+	q3.answeredCprrectly="Y";
 	console.log(this);
 }
 function xoxo03() {
 	console.log("in xoxo03");
+	q4.answeredCorrectly="Y";
 	console.log(this);
 }
 function xoxo13() {
@@ -171,6 +177,7 @@ function xoxo23() {
 }
 function xoxo04() {
 	console.log("in xoxo04");
+	q5.answeredCprrectly="Y";
 	console.log(this);
 }
 function xoxo14() {
