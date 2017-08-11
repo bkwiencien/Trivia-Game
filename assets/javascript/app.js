@@ -5,35 +5,40 @@ var q1 = {
 	possibleAnswer1: "Johnny Carson",
 	possibleAnswer2: "Jack Bailey",
 	possibleAnswer3: "ED McMahon",
-	correctAnswer: "Jack Bailey"
+	correctAnswer: "Jack Bailey",
+	answeredCorrectly: "N"
 }
 var q2 = {
 	question: "Who was the first host of the tonight show?",
 	possibleAnswer1: "Johnny Carson",
 	possibleAnswer2: "Joey Bishop",
 	possibleAnswer3: "Jack Paar",
-	correctAnswer: "Jack Paar"
+	correctAnswer: "Jack Paar",
+	answeredCorrectly: "N"
 }
 var q3 = {
 	question: "Daddy in Make Room for Daddy was played by?",
 	possibleAnswer1: "Ralph Waldo Emerson",
 	possibleAnswer2: "Frank Sinatra",
 	possibleAnswer3: "Danny Thomas",
-	correctAnswer: "Danny Thomas"
+	correctAnswer: "Danny Thomas",
+	answeredCorrectly: "N"
 }
 var q4 = {
 	  question: "Who played the beaver in Leave it to Beaver?",
 	  possibleAnswer1: "Jerry Mathers",
 	  possibleAnswer2: "Tommy Kirk",
 	  possibleAnswer3: "Bobby Driscoll",
-	  correctAnswer:   "Jerry Mathers"
+	  correctAnswer:   "Jerry Mathers",
+	  answeredCorrectly: "N"
 }	
 var q5 = {
 	  question: "Who played the Andy's girlfriend on the Andy Grifith Show?",
 	  possibleAnswer1: "Aneta Corsaut",
 	  possibleAnswer2: "Arnold Schwarzenegger",
 	  possibleAnswer3: "Dame Edith Evans",
-	  correctAnswer:   "Aneta Corsaut"
+	  correctAnswer:   "Aneta Corsaut",
+	  answeredCorrectly: "N"
 }	    
 
 
@@ -98,4 +103,5 @@ function assesTheGame() {
 }
 function xoxo() {
 	console.log("in xoxo");
+	console.log(this);
 }
