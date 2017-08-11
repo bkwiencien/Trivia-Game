@@ -46,7 +46,7 @@ theQuestions = [q1,q2,q3,q4,q5];
 function initialize() {
 	console.log("initialize");
 	createQuestions();
-	var timeLeft = 11;
+	var timeLeft = 61;
 	var gameTimer = setInterval(function() {
 		timeLeft--;
 		$("#timer").html("<center>Seconds Remaining: " + timeLeft + "</center>")
@@ -54,7 +54,7 @@ function initialize() {
 			clearInterval(gameTimer);
 			assesTheGame();
 	
-			$("#timer").html("seconds Remaining: 0");
+			$("#timer").html("seconds Remaining: 0 Game Over");
 		}
 	},1000);
 
@@ -81,9 +81,11 @@ function createQuestions() {
       $("#questions").append(questionText+ " ");
       var radioYes = document.createElement("input");
       radioYes.setAttribute("type","radio");
-      radioYes.setAttribute("id","radio"+i);
+      radioYes.setAttribute("id","radio"+i+j);
+      console.log("id = radio" + i + j);
       radioYes.setAttribute("name",nameOfRadio);
-      radioYes.setAttribute("data","radio"+i);
+      radioYes.setAttribute("data","radio"+i+j);
+      //radioYes.setAttribute("class","radio");
       radioYes.setAttribute("onclick","xoxo()");
       $("#questions").append(radioYes);
       $("#questions").append("<br>");
@@ -92,7 +94,7 @@ function createQuestions() {
 }
 
 }
-$("#radio0").on("click" ,function (){
+$("#radio00").on("click" ,function (){
 	console.log("1 clicked");
 });
 
