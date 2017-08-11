@@ -52,7 +52,7 @@ theRadios =[];
 function initialize() {
 	console.log("initialize");
 	createQuestions();
-	var timeLeft = 61;
+	var timeLeft = 31;
 	var gameTimer = setInterval(function() {
 		timeLeft--;
 		$("#timer").html("<center>Seconds Remaining: " + timeLeft + "</center>")
@@ -159,7 +159,7 @@ function xoxo02() {
 }
 function xoxo22() {
 	console.log("in xoxo22");
-	q3.answeredCprrectly="Y";
+	q3.answeredCorrectly="Y";
 	console.log(this);
 }
 function xoxo03() {
@@ -177,7 +177,7 @@ function xoxo23() {
 }
 function xoxo04() {
 	console.log("in xoxo04");
-	q5.answeredCprrectly="Y";
+	q5.answeredCorrectly="Y";
 	console.log(this);
 }
 function xoxo14() {
