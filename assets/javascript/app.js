@@ -124,7 +124,6 @@ function assesTheGame() {
 
 }
 function processTheClicks() {
-	console.log("in processTheClicks");
 	if ($("#radio10").is(":checked")) {
 		console.log("radio10 checked");
 		q1.answeredCorrectly="Y";
