@@ -1,5 +1,6 @@
 var numberCorrect = 0;
 var numberWrong = 0;
+var unanswered  = 0
 var q1 = {
 	question: "Who hosted queen for a day?",
 	possibleAnswer1: "Johnny Carson",
@@ -7,7 +8,8 @@ var q1 = {
 	possibleAnswer3: "ED McMahon",
 	correctAnswer: "Jack Bailey",
 	correctAnswerByID: "radio10",
-	answeredCorrectly: "N"
+	answeredCorrectly: "N",
+	answerSupplied:    "N"
 }
 var q2 = {
 	question: "Who was the first host of the tonight show?",
@@ -16,7 +18,8 @@ var q2 = {
 	possibleAnswer3: "Jack Paar",
 	correctAnswer: "Jack Paar",
 	correctAnswerById: "radio21",
-	answeredCorrectly: "N"
+	answeredCorrectly: "N",
+	answerSupplied:    "N"
 }
 var q3 = {
 	question: "Daddy in Make Room for Daddy was played by?",
@@ -25,7 +28,8 @@ var q3 = {
 	possibleAnswer3: "Danny Thomas",
 	correctAnswer: "Danny Thomas",
 	correctAnswerById: "radio22",
-	answeredCorrectly: "N"
+	answeredCorrectly: "N",
+	answerSupplied:    "N"
 }
 var q4 = {
 	  question: "Who played the beaver in Leave it to Beaver?",
@@ -34,7 +38,8 @@ var q4 = {
 	  possibleAnswer3: "Bobby Driscoll",
 	  correctAnswer:   "Jerry Mathers",
 	  correctAnswerById: "radio03",
-	  answeredCorrectly: "N"
+	  answeredCorrectly: "N",
+	  answerSupplied:    "N"
 }	
 var q5 = {
 	  question: "Who played the Andy's girlfriend on the Andy Grifith Show?",
@@ -43,7 +48,8 @@ var q5 = {
 	  possibleAnswer3: "Dame Edith Evans",
 	  correctAnswer:   "Aneta Corsaut",
 	  correctAnswerById: "radio04",
-	  answeredCorrectly: "N"
+	  answeredCorrectly: "N",
+	  answerSupplied:    "N"
 }	    
 
 
@@ -120,7 +126,7 @@ function assesTheGame() {
    }
    $("#correct").html("correct " + numberCorrect);
    $("#wrong").html("wrong " + numberWrong);
-   $("#questions").remove();
+   //$("#questions").remove();
 
 }
 function processTheClicks() {

@@ -52,7 +52,7 @@ theRadios =[];
 function initialize() {
 	console.log("initialize");
 	createQuestions();
-	var timeLeft = 61;
+	var timeLeft = 31;
 	var gameTimer = setInterval(function() {
 		timeLeft--;
 		$("#timer").html("<center>Seconds Remaining: " + timeLeft + "</center>")
@@ -116,19 +116,18 @@ function assesTheGame() {
       	numberCorrect++;
       } else {
       	numberWrong++;
+      	//$("#"+w.correctAnswerById).css({
+      	$("#"+w.theQuestions).append("XXXXXX");
+      	console.log("tried to turn it red");
+      	console.log("#"+w.correctAnswerById);
       }
    }
    $("#correct").html("correct " + numberCorrect);
    $("#wrong").html("wrong " + numberWrong);
-   $("#questions").remove();
-  //whoWasChosen = document.getElementsByName("radio00");
-  //console.log(whoWasChosen);
-
-  //console.log(whoWasChosen.input.attributes.checked);
+   //$("#questions").remove();
 
 }
 function processTheClicks() {
-	console.log("in processTheClicks");
 	if ($("#radio10").is(":checked")) {
 		console.log("radio10 checked");
 		q1.answeredCorrectly="Y";
