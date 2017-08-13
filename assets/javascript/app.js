@@ -124,7 +124,7 @@ function assesTheGame() {
       if (w.answerSupplied == "N"){
       	 unanswered++;
       }
-      if (w.answerSupplied == "Y" && answeredCorrectly == "N") {
+      if (w.answerSupplied == "Y" && w.answeredCorrectly == "N") {
       	 numberWrong++;
       }
     }  
