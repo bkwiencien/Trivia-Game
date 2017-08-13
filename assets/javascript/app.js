@@ -135,7 +135,8 @@ function assesTheGame() {
 
 }
 function processTheClicks() {
-	if ($("#radiooo").is(":checked")) {
+	
+	if ($("#radio00").is(":checked")) {
 	    q1.answerSupplied="Y";
     }
 	if ($("#radio10").is(":checked")) {
@@ -143,24 +144,34 @@ function processTheClicks() {
 		q1.answeredCorrectly="Y";
 		q1.answerSupplied ="Y";
 	}
-	if ($("#radio10").is(":checked")) {
+	if($("#radio11").is(":checked")) {
+		console.log("radio11 checked");
+		q2.answerSupplied = "Y";
+	}
+	if ($("#radio20").is(":checked")) {
 		console.log("radio20 checked");
 		q1.answerSupplied ="Y";
 	}
+
+	if ($("radio01").is(":checked")){
+		q2.answerSupplied = "Y";
+	}
+	
 	if ($("#radio21").is(":checked")) {
-		console.log("radio201 checked");
+		console.log("radio21 checked");
 		q2.answeredCorrectly = "Y";
-		q2.answerSuppied = "Y";
+		q2.answerSupplied = "Y";
 	}
 	if ($("#radio22").is(":checked")) {
 		console.log("radio22 checked");
 		q3.answeredCorrectly = "Y";
-		q3.answwerSupplied ="Y";
+		q3.answerSupplied ="Y";
 	}	
+
 	if ($("#radio03").is(":checked")) {
 		console.log("radio03 checked");
 		q4.answeredCorrectly = "Y";
-		q4.answerSuppied = "Y";
+		q4.answerSupplied = "Y";
 	}	
 	if ($("#radio04").is(":checked")) {
 		console.log("radio04 checked");
