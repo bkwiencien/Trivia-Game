@@ -94,8 +94,14 @@ function initialize() {
 		if (timeLeft == 13){
 			$("#tv").attr("src","assets/images/tv4.jpeg");
 		}
+		if (timeLeft == 12){
+			$("#tv").attr("src","assets/images/tv50.jpeg");
+		}
 		if (timeLeft == 11){
 			$("#tv").attr("src","assets/images/tv30.jpeg");
+		}
+		if (timeLeft == 10){
+			$("#tv").attr("src","assets/images/tv300.jpeg");
 		}
 		if (timeLeft == 8){
 			$("#tv").attr("src","assets/images/tv13.jpeg");
@@ -103,11 +109,20 @@ function initialize() {
 		if (timeLeft == 7){
 			$("#tv").attr("src","assets/images/tv11.jpeg");
 		}
+		if (timeLeft == 6){
+			$("#tv").attr("src","assets/images/tv200.jpeg");
+		}
 		if (timeLeft == 5){
 			$("#tv").attr("src","assets/images/tv8.jpeg");
 		}
+		if (timeLeft == 4){
+			$("#tv").attr("src","assets/images/tv100.jpeg");
+		}
 		if (timeLeft == 3){
 			$("#tv").attr("src","assets/images/tv12.jpeg");
+		}
+		if (timeLeft == 2){
+			$("#tv").attr("src","assets/images/tv60.jpeg");
 		}
 		if (timeLeft == 1){
 			$("#tv").attr("src","assets/images/tv40.jpeg");
