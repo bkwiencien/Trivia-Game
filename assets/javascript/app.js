@@ -168,12 +168,26 @@ function processTheClicks() {
 		q3.answeredCorrectly = "Y";
 		q3.answerSupplied ="Y";
 	}	
+	if ($("#radio12").is(":checked")) {
+		q3.answerSupplied = "Y";
+	}
+	if ($("#radio02").is(":checked")) {
+		q3.answerSupplied = "Y";
+	}
 
 	if ($("#radio03").is(":checked")) {
 		console.log("radio03 checked");
 		q4.answeredCorrectly = "Y";
 		q4.answerSupplied = "Y";
 	}	
+	if ($("#radio13").is(":checked")) {
+		q4.answerSupplied = "Y";
+	}
+	if ($("#radio23").is(":checked")) {
+		q4.answerSupplied = "Y";
+	}
+
+
 	if ($("#radio04").is(":checked")) {
 		console.log("radio04 checked");
 		q5.answeredCorrectly = "Y";
