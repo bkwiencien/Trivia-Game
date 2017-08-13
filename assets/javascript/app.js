@@ -82,6 +82,9 @@ function initialize() {
 		if (timeLeft == 10){
 			$("#tv").attr("src","assets/images/tv4.jpeg");
 		}
+		if (timeLeft == 8){
+			$("#tv").attr("src","assets/images/tv13.jpeg");
+		}
 		if (timeLeft == 7){
 			$("#tv").attr("src","assets/images/tv11.jpeg");
 		}
