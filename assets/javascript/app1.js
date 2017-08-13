@@ -56,10 +56,10 @@ var q5 = {
 theQuestions = [q1,q2,q3,q4,q5];
 theRadios =[];
 function initialize() {
-	console.log("initializ`e");
+	console.log("initialize");
 	$("#startbutton").remove();
 	createQuestions();
-	var timeLeft = 31;
+	var timeLeft = 11;
 	var gameTimer = setInterval(function() {
 		timeLeft--;
 		$("#timer").html("<center>Seconds Remaining: " + timeLeft + "</center>")

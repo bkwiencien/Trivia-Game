@@ -3,6 +3,9 @@
 	background-color: #607070;
 	background-image: images/image1.jpg;
 }
+#startbutton {
+	color: red;
+}
 #mainjumbotron {
 	color: white;
 	background-color: #607070;
