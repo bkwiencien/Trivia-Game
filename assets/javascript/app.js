@@ -61,9 +61,34 @@ function initialize() {
 	var gameTimer = setInterval(function() {
 		timeLeft--;
 		$("#timer").html("<center>Seconds Remaining: " + timeLeft + "</center>")
+		if (timeLeft == 27){
+			$("#tv").attr("src","assets/images/tv7.jpeg");
+		}
+		if (timeLeft == 25){
+			$("#tv").attr("src","assets/images/tv1.jpeg");
+		}
+		if (timeLeft == 23){
+			$("#tv").attr("src","assets/images/tv5.jpeg");
+		}
+		if (timeLeft == 20){
+			$("#tv").attr("src","assets/images/tv2.jpeg");
+		}
+		if (timeLeft == 17){
+			$("#tv").attr("src","assets/images/tv6.jpeg");
+		}
+		if (timeLeft == 15){
+			$("#tv").attr("src","assets/images/tv3.jpeg");
+		}
+		if (timeLeft == 10){
+			$("#tv").attr("src","assets/images/tv4.jpeg");
+		}
+		if (timeLeft == 5){
+			$("#tv").attr("src","assets/images/tv8.jpeg");
+		}
 		if (timeLeft <= 0){
 			clearInterval(gameTimer);
 			assesTheGame();
+			$("#tv").attr("src","assets/images/tv9.jpeg");
 			$("#timer").html("seconds Remaining: 0 Game Over");
 		}
 	},1000);
