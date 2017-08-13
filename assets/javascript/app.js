@@ -120,19 +120,31 @@ function assesTheGame() {
       var w = theQuestions[j];
       if (w.answeredCorrectly == "Y") {
       	numberCorrect++;
-      } else {
-      	numberWrong++;
+      } 
+      if (w.answerSupplied == "N"){
+      	 unanswered++;
       }
-   }
-   $("#correct").html("correct " + numberCorrect);
-   $("#wrong").html("wrong " + numberWrong);
+      if (w.answerSupplied == "Y" && answeredCorrectly == "N") {
+      	 numberWrong++;
+      }
+    }  
+   $("#correct").html("correct: " + numberCorrect);
+   $("#wrong").html("wrong: " + numberWrong);
+   $("#unanswered").html("unanswered:" + unanswered);
    //$("#questions").remove();
 
 }
 function processTheClicks() {
+	if ($("#radiooo").is(":checked")) {
+	    q1.answerSupplied="Y";
+    }
 	if ($("#radio10").is(":checked")) {
 		console.log("radio10 checked");
 		q1.answeredCorrectly="Y";
+		q1.answerSupplied ="Y";
+	}
+	if ($("#radio10").is(":checked")) {
+		console.log("radio20 checked");
 		q1.answerSupplied ="Y";
 	}
 	if ($("#radio21").is(":checked")) {
