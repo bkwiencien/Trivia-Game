@@ -88,6 +88,9 @@ function initialize() {
 		if (timeLeft == 5){
 			$("#tv").attr("src","assets/images/tv8.jpeg");
 		}
+		if (timeLeft == 3){
+			$("#tv").attr("src","assets/images/tv12.jpeg");
+		}
 		if (timeLeft <= 0){
 			clearInterval(gameTimer);
 			assesTheGame();
