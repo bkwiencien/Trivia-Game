@@ -155,6 +155,7 @@ function processTheClicks() {
 
 	if ($("radio01").is(":checked")){
 		q2.answerSupplied = "Y";
+		console.log("radio01 checked");
 	}
 	
 	if ($("#radio21").is(":checked")) {
@@ -178,6 +179,12 @@ function processTheClicks() {
 		q5.answeredCorrectly = "Y";
 		q5.answerSupplied = "Y";
 	}	
+	if ($("#radio14").is(":checked")) {
+		q5.answerSupplied = "Y";
+	}
+	if ($("#radio24").is(":checked")) {
+		q5.answerSupplied = "Y";
+	}
 }
 
 
