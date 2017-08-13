@@ -61,6 +61,9 @@ function initialize() {
 	var gameTimer = setInterval(function() {
 		timeLeft--;
 		$("#timer").html("<center>Seconds Remaining: " + timeLeft + "</center>")
+		if (timeLeft == 29){
+			$("#tv").attr("src","assets/images/tv1000.jpeg");
+		}
 		if (timeLeft == 28){
 			$("#tv").attr("src","assets/images/tv14.jpeg");
 		}
