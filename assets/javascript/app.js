@@ -58,7 +58,7 @@ theRadios =[];
 function initialize() {
 	console.log("initialize");
 	createQuestions();
-	var timeLeft = 31;
+	var timeLeft = 11;
 	var gameTimer = setInterval(function() {
 		timeLeft--;
 		$("#timer").html("<center>Seconds Remaining: " + timeLeft + "</center>")
@@ -153,7 +153,7 @@ function processTheClicks() {
 		q1.answerSupplied ="Y";
 	}
 
-	if ($("radio01").is(":checked")){
+	if ($("#radio01").is(":checked")){
 		q2.answerSupplied = "Y";
 		console.log("radio01 checked");
 	}
