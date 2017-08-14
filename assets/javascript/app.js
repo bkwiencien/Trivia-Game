@@ -1,7 +1,6 @@
 var numberCorrect = 0;
 var numberWrong = 0;
 var unanswered  = 0
-var timeLeft = 0;
 var gameAssesed = false;
 var q1 = {
 	question: "Who hosted queen for a day?",
@@ -60,7 +59,6 @@ function initialize() {
 	$("#startbutton").remove();
 	createQuestions();
 	var timeLeft = 31;
-	     timeLeft = 31;
 	var gameTimer = setInterval(function() {
 		timeLeft--;
 		$("#timer").html("<center>Seconds Remaining: " + timeLeft + "</center>")
@@ -187,10 +185,6 @@ function createQuestions() {
    $("#donebutton").append(buttonYes);
 
 }
-//$("#radio00").on("click" ,function (){
-//	console.log("1 clicked");
-//});
-
 function assesTheGame() {
   var whoWasChosen;
   processTheClicks();
@@ -268,8 +262,8 @@ function processTheClicks() {
 	}
 }
 function finito() {
-	timeLeft = 0;
 	assesTheGame();
+	$("#doneparagraph").html("clicked done check below for score");
 }
 
 
